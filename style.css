@@ -1,0 +1,74 @@
+body { font-family: Arial, sans-serif; }
+.completed { text-decoration: line-through; color: gray; }
+.content{
+    width:50%;
+    margin:0px auto;
+
+}
+h2{
+    text-align: center;
+    color:darkblue; 
+}
+.container{
+    background:white;
+    border:1px solid darkblue;
+    height:50vh;
+    overflow:auto;
+    
+}
+ul{
+    list-style-type: none;
+    color:white;
+    padding:10px 5px;
+
+}
+ul li{
+    padding:10px 5px;
+    margin:5px 0;   
+    background-color:darkblue;
+    transition:0.5s;  
+    color:white;
+    border-right:3px solid red;
+  
+}
+ul li:hover{
+    border:1px solid darkblue;
+    color:darkblue;
+    background:white;
+    cursor: pointer;
+    border-right:3px solid darkblue;
+}
+
+@media  screen and (max-width:460px) {
+    .content{
+        width:100%;
+    }
+    .container{
+        border-radius:10px;
+    }
+    input {
+        width:70%;
+        padding:5px 3px;
+        border-bottom:3px solid darkblue ;
+        
+    }
+    .info{
+        animation:anim ease 2s;
+    }
+    #addTask{
+        padding:8px 10px;   
+        color:red;
+        background:darkblue; 
+        border:none;     
+        border-radius:5px;        
+    }
+    #addTask:hover{
+        background:white;
+        color:darkblue;
+        border:1px solid darkblue;
+    }
+    @keyframes anim{
+        from{scale:0.2;}
+        to{scale:1;}
+    }
+}
